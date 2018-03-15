@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PPR Motif Annotation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+    <h1 align="center">PPR Motif Annotation using Neural Network</h1>
+    <br>
+    <div style="font-family: Courier New; font-size: 4;">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+
+<footer style="height: 40px; position: relative;" class="footer fixed-bottom navbar-fixed-bottom">
+    <div class="container" style="padding: 9px 36px 0px 36px;">
+        <span class="text-muted" style="padding-left: 10px;">© 2018 Copyright:
+            <a class="text-muted" href="mailto:convey.wang@gmail.com">Gongwei Wang</a>&nbsp;|&nbsp;
+            <a class="text-muted" href="/">Disclaimer</a>
+        </span>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,7 @@
+Flask
+gunicorn
+h5py
+Keras
+numpy
+pandas
+tensorflow
