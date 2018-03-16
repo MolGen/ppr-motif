@@ -9,16 +9,29 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 
-<body>
-    <h1 align="center">PPR Motif Annotation using Neural Network</h1>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"> PPR Motif Annotation using Neural Network </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li> <a href="/curated">Curated</a> </li>
+            <li> <a href="/logo">Logo</a> </li>
+            <li> <a href="https://www.github.com/MolGen/ppr-motif">Github</a> </li>
+        </ul>
+    </div>
+</nav>
+
+<body style="padding-top: 60px; padding-bottom: 60px;">
     <br>
-    <div style="font-family: Courier New; font-size: 4;">
+    <div class="container-fluid" style="font-family: Courier New; font-size: 4;">
         {% block content %} {% endblock %}
     </div>
 </body>
 
 <footer style="height: 40px; position: relative;" class="footer fixed-bottom navbar-fixed-bottom">
-    <div class="container" style="padding: 9px 36px 0px 36px;">
+    <div class="container">
         <span class="text-muted" style="padding-left: 10px;">© 2018 Copyright:
             <a class="text-muted" href="mailto:convey.wang@gmail.com">Gongwei Wang</a>&nbsp;|&nbsp;
             <a class="text-muted" href="/">Disclaimer</a>

@@ -5,25 +5,25 @@ This is the code and weight files to run and deploy the Flask app [PPR motif](ht
 
 ## Sequence logo of *Arabidopsis thaliana* PPR motif variants  
 P    
-![P](datasets/Logo/P.png)  
+![P](static/Logo/P.png)  
 P1   
-![P1](datasets/Logo/P1.png)  
+![P1](static/Logo/P1.png)  
 P2   
-![P2](datasets/Logo/P2.png)  
+![P2](static/Logo/P2.png)  
 L1   
-![L1](datasets/Logo/L1.png)  
+![L1](static/Logo/L1.png)  
 L2   
-![L2](datasets/Logo/L2.png)  
+![L2](static/Logo/L2.png)  
 S1   
-![S1](datasets/Logo/S1.png)  
+![S1](static/Logo/S1.png)  
 S2   
-![S2](datasets/Logo/S2.png)  
+![S2](static/Logo/S2.png)  
 SS   
-![SS](datasets/Logo/SS.png)  
+![SS](static/Logo/SS.png)  
 E1   
-![E1](datasets/Logo/E1.png)  
+![E1](static/Logo/E1.png)  
 E2   
-![E2](datasets/Logo/E2.png)  
+![E2](static/Logo/E2.png)  
 
 ## Dependencies  
 ```sudo pip install -r requirements.txt```
