@@ -99,6 +99,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/logo')
+def logo():
+    return render_template('logo.html')
 
 @app.route('/anno', methods=['POST'])
 def anno():
