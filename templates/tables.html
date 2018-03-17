@@ -1,4 +1,4 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "layout.html" %} {% block content %} {{ entries| safe }}
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
@@ -8,9 +8,4 @@
             "lengthMenu": [[50, 200, 500, -1], [50, 200, 500, "All"]]
         });
     });
-</script>
-
-<div class="container" align="center">
-    {{ entries| safe }}
-</div>
-{% endblock %}
+</script> {% endblock %}
