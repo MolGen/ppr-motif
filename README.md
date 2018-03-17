@@ -31,14 +31,14 @@ E2
 ## Todo 
 - [ ] Bugs
     - [x] Handling inputs.
+    - [x] Bed format coordinates (0-based exclusive) of the features.
     - [ ] Ending positions of the features.
-    - [x] Bed format positions of the features.
 - [ ] Optimization
     - [ ] Variable length features (pad_sequences?).
     - [ ] Unbalanced training set (sample_weight?).
     - [ ] Under-represented classes (class_weight?).
-- [ ] Features
+- [ ] Enhancement
     - [ ] Setting maximum number of query sequences.  
-    - [x] Uploading example query sequences from file.  
+    - [x] Loading example query sequences from file.  
     - [ ] Uploading query sequences from file.  
     - [ ] Displaying and downloading annotations in either bed or GFF3 format.  
