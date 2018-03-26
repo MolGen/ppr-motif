@@ -1,8 +1,7 @@
 import numpy as np
 import pandas as pd
 from flask import Flask, render_template, request
-from keras.layers import Dense, Dropout
-from keras.models import Sequential
+from keras.models import load_model
 from keras.utils import to_categorical
 
 
@@ -50,26 +49,6 @@ def PPR_motifs(accession, sequence, model, labels, bg="B", k=35):
     return df
 
 
-def mlp_model(xshape, yshape, weights=None):
-    # Define model
-    model = Sequential()
-    model.add(Dense(256, input_dim=xshape, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(128, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(64, activation='relu'))
-    model.add(Dense(yshape, activation='softmax'))
-
-    if weights:
-        model.load_weights(weights)
-
-    model.compile(loss='categorical_crossentropy',
-                  optimizer='rmsprop',
-                  metrics=['accuracy'])
-
-    return model
-
-
 def read_fasta(fp):
     """https://stackoverflow.com/a/7655072"""
     name, seq = None, []
@@ -89,8 +68,7 @@ labels = np.array(['B', 'E1', 'E2', 'L1', 'L2', 'P', 'P1',
                    'P2', 'S1', 'S2', 'SS'], dtype='object')
 
 # Load Trained model
-weights = "Model/Model_50k.h5"
-model = mlp_model(xshape=700, yshape=11, weights=weights)
+model = load_model("Model/Model_50k.h5")
 
 app = Flask(__name__)
 
