@@ -65,10 +65,10 @@ def read_fasta(fp):
 
 
 labels = np.array(['B', 'E1', 'E2', 'L1', 'L2', 'P', 'P1',
-                   'P2', 'S1', 'S2', 'SS'], dtype='object')
+                   'P2', 'S1', 'S2', 'SS', 'TPR'], dtype='object')
 
 # Load Trained model
-model = load_model("Model/Model_50k.h5")
+model = load_model("Model/Model_Epoch_44.h5")
 
 app = Flask(__name__)
 
