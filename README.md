@@ -20,6 +20,8 @@ S2
 ![S2](static/Logo/S2.png)  
 SS   
 ![SS](static/Logo/SS.png)  
+TPR   
+![TPR](static/Logo/TPR.png)  
 E1   
 ![E1](static/Logo/E1.png)  
 E2   
