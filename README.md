@@ -1,9 +1,30 @@
 # PPR Motif Annotation using Neural Network
 
 ## Overview  
-This is the code and weight files to run and deploy the Flask app [PPR motif](https://ppr-motif.appspot.com/), which uses pre-trained Keras model to predict 10 different variants of [PPR motif](http://onlinelibrary.wiley.com/doi/10.1111/tpj.13121/full#tpj13121-sec-0002). However, we still use [PROSITE model](https://prosite.expasy.org/PDOC51375) of the PPR motif.
+PPR Motif Annotation is a neural network based method for accurately predicting different variants of [PPR motif](http://onlinelibrary.wiley.com/doi/10.1111/tpj.13121/full#tpj13121-sec-0002), which is essential to extract PPR code thus large-scale predictions of PPR targets. 
 
-## Sequence logo of *Arabidopsis thaliana* PPR motif variants  
+This repository contains code and pre-trained Keras model to run and deploy the **[Flask app](https://ppr-motif.appspot.com/)** together with code and data used to train the model and evaluating the model's performance.
+
+## Dependencies  
+To install python dependencies run:  ```pip install -r requirements.txt```
+
+## Todo 
+- [ ] Bugs
+    - [x] Handling inputs.
+    - [x] Bed format coordinates (0-based exclusive) of the features.
+    - [ ] Ending positions of the features.
+- [ ] Optimization
+    - [ ] Variable length features (pad_sequences?).
+    - [ ] Unbalanced training set (sample_weight?).
+    - [ ] Under-represented classes (class_weight?).
+- [ ] Enhancement
+    - [ ] Setting maximum number of query sequences.  
+    - [x] Loading example query sequences from file.  
+    - [ ] Uploading query sequences from file.  
+    - [ ] Displaying and downloading annotations in either bed or GFF3 format.  
+
+
+## Sequence logo of *Arabidopsis thaliana* PPR-like motif variants  
 P    
 ![P](static/Logo/P.png)  
 P1   
@@ -26,21 +47,3 @@ E1
 ![E1](static/Logo/E1.png)  
 E2   
 ![E2](static/Logo/E2.png)  
-
-## Dependencies  
-```sudo pip install -r requirements.txt```
-
-## Todo 
-- [ ] Bugs
-    - [x] Handling inputs.
-    - [x] Bed format coordinates (0-based exclusive) of the features.
-    - [ ] Ending positions of the features.
-- [ ] Optimization
-    - [ ] Variable length features (pad_sequences?).
-    - [ ] Unbalanced training set (sample_weight?).
-    - [ ] Under-represented classes (class_weight?).
-- [ ] Enhancement
-    - [ ] Setting maximum number of query sequences.  
-    - [x] Loading example query sequences from file.  
-    - [ ] Uploading query sequences from file.  
-    - [ ] Displaying and downloading annotations in either bed or GFF3 format.  
